@@ -7,7 +7,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar navbar-default navbar-fixed-top">
   <!-- Fixed navbar -->
   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -84,13 +84,13 @@
       </div>
     </div>
     <!--Carousel Controll Options-->
-    <a class="left carousel-control" href="#HELLO" data-slide="prev"></a>
-    <a class="right carousel-control" href="#HELLO" data-slide="next"></a>
+    <a class="left carousel-control" href="#HELLO" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#HELLO" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
   </div>
   <!--End of Carousel-->
   <!--Begin Mission-->
   </br></br>
-  <div class="container">
+  <div class="container" >
     <div id="mission">
       <div class="jumbotron">
         <h1>
@@ -99,6 +99,9 @@
             To help you with your...//Finish typing later
           </font>
         </h1>
+        <p>
+          Procrastination is a nasty habit that forces people to wait till the very last minute to complete a task. It can lead to higher stress levels and affect ones well being. TimeCrunch is geared toward helping you break this habit by helping you manage your time and organise your task. Not only does our specialised app help you managge skills, but provides addition tips and tricks that can easily be done in your everday life to help you break this destructive habit.
+        </p>
       </div>
     </div>
   </div>
@@ -106,10 +109,81 @@
   <!--Begin Organiser-->
   <div id="organiser" class="container">
     <div class="jumbotron">
-      <h1>Tick Tock</h1>
+      <h1>Tick Tock:
+        <font style="font-size: 14px;"> 
+          The handy dandy app for any procrastinators need.
+        </font>
+      </h1>
       <h2>App goes here, nice and cozy. :) </h2>
-      <applet code="app/ticktock.java">
-      </applet>
+          <div id="sketch_140417a_container">
+
+        <!-- This version plays nicer with older browsers,
+             but requires JavaScript to be enabled.
+             http://java.sun.com/javase/6/docs/technotes/guides/jweb/deployment_advice.html
+             http://download.oracle.com/javase/tutorial/deployment/deploymentInDepth/ -->
+        <script type="text/javascript" src="http://www.java.com/js/deployJava.js"></script>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var attributes = {
+                code: 'sketch_140417a.class',
+                archive: 'app/sketch_140417a.jar',
+                archive: 'app/core.jar',
+                archive: 'app/core.jar',
+                width: 1000,
+                height: 1000
+            };
+            var parameters = {
+                image: 'app/loading.gif',
+                centerimage: 'true'
+            };
+            var version = '1.5';
+            deployJava.runApplet(attributes, parameters, version);
+
+            /* ]]> */
+        </script>
+
+        <noscript> 
+          <div>
+            <!--[if !IE]> -->
+            <object classid="java:sketch_140417a.class" 
+                    type="application/x-java-applet" 
+                    archive="app/sketch_140417a.jar" 
+                    archive="app/core.jar" 
+                    archive="app/core.jar" 
+                    width="1000" 
+                    height="1000" 
+                    standby="Loading Processing software..." >
+              <param name="archive" value="app/sketch_140417a.jar" />
+              <param name="archive" value="app/core.jar" />
+              <param name="archive" value="app/core.jar" />
+              <param name="mayscript" value="true" />
+              <param name="scriptable" value="true" />
+              <param name="image" value="app/loading.gif" />
+              <param name="boxmessage" value="Loading Processing software..." />
+              <param name="boxbgcolor" value="#FFFFFF" />
+            
+              <object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+                      codebase="http://java.sun.com/update/1.6.0/jinstall-6u20-windows-i586.cab"
+                      width="1000" 
+                      height="1000"
+                      standby="Loading Processing software..."  >
+
+                <param name="code" value="sketch_140417a" />
+                <param name="archive" value="app/sketch_140417a.jar" />
+                <param name="archive" value="app/core.jar" />
+                <param name="archive" value="app/core.jar" />
+                <param name="mayscript" value="true" />
+                <param name="scriptable" value="true" />
+                <param name="image" value="app/loading.gif" />
+                <param name="boxmessage" value="Loading Processing software..." />
+                <param name="boxbgcolor" value="#FFFFFF" />
+              </object>
+              <!--[if !IE]> -->
+          </object>
+          <!--<![endif]-->
+        </div> 
+      </noscript>
+    </div>
     </div>
   </div> 
   <!--End Organiser-->
@@ -152,34 +226,34 @@
         <div class="row">
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-              <img src="img/square1.jpg">
+              <img src="img/victoria.jpg">
               <div class="caption">
                 <h3>Victoria Chavez</h3>
                 <h5>Project Leader, App Developer</h5>
                 <br>
-                <p>Victoria is a senior. Blah Blah Blah, Talk about person. PERSONAL BIO:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis diam non libero sagittis ornare. Sed id tincidunt odio, sed venenatis ligula. Phasellus at magna sed urna vestibulum iaculis. Ut condimentum auctor arcu vel dictum. Donec adipiscing, nisi sit amet posuere suscipit, libero velit pretium elit, in pretium sem felis nec quam. Integer sit amet sapien sit amet augue semper ullamcorper eget quis velit. Sed sagittis euismod elit. Aliquam id laoreet massa. Proin porta felis metus, id scelerisque mauris rutrum sit amet. Aliquam dictum ullamcorper diam, at adipiscing sem convallis ut. In ut ipsum scelerisque, sagittis dolor sit amet, congue dui. Morbi lacinia massa eget risus sagittis luctus.</p>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-              <img src="img/square2.jpg">
+              <img src="img/emilio.jpg">
               <div class="caption">
                 <h3>Emilio Garcia</h3>
                 <h5>Web Developer, Graphic Designer</h5>
                 <br>
-                <p>Emilio is a junior. Blah Blah Blah, Talk about person. PERSONAL BIO:</p>
+                <p>Emilio is science enthusiast. He has a passion for exploration and Star Trek. When he is not researching the latest scientific discovery, he uses his time to explore the art of cuisine, web development and the occasional good book. With a record distance of 80 miles, Emilio is part of the bike subculture and enjoys biking early in the morning.</p>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-              <img src="img/square3.jpg">
+              <img src="img/joel.jpeg">
               <div class="caption">
                 <h3>Joel DeLeon</h3>
                 <h5>App Developer, Graphic Designer</h5>
                 <br>
-                <p>Joel is a senior. Blah Blah Blah, Talk about person. PERSONAL BIO:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis diam non libero sagittis ornare. Sed id tincidunt odio, sed venenatis ligula. Phasellus at magna sed urna vestibulum iaculis. Ut condimentum auctor arcu vel dictum. Donec adipiscing, nisi sit amet posuere suscipit, libero velit pretium elit, in pretium sem felis nec quam. Integer sit amet sapien sit amet augue semper ullamcorper eget quis velit. Sed sagittis euismod elit. Aliquam id laoreet massa. Proin porta felis metus, id scelerisque mauris rutrum sit amet. Aliquam dictum ullamcorper diam, at adipiscing sem convallis ut. In ut ipsum scelerisque, sagittis dolor sit amet, congue dui. Morbi lacinia massa eget risus sagittis luctus.</p>
               </div>
             </div>
           </div>
@@ -192,5 +266,21 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+  $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+  </script>
 </body>
 </html>
