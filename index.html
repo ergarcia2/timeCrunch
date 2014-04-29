@@ -24,13 +24,15 @@
           <li><a href="#TAT">Tips & Tricks</a></li>
           <li><a>|</a></li>
           <li><a href="#about">About Us</a></li>
+          <li><a>|</a></li>
+          <li><a href="#reviews">Reviews</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
   <!--End of Nav Bar-->
 </head>
-<body data-spy="scroll" data-target=".navbar">
+<body data-target=".navbar">
 
   <!--Begin Carousel-->
   <!-- class of slide for animation -->
@@ -110,18 +112,25 @@
   <!--End Mission-->
   <!--Begin Organiser-->
   <div id="organiser" class="container">
-    <div class="jumbotron">
-      <h1>Tick Tock:
-        <font style="font-size: 14px;"> 
-          The handy dandy app for any procrastinators need.
-        </font>
-      </h1>
-      <h2>App goes here, nice and cozy. :) </h2>
-
-      <canvas data-processing-sources="Toroid/Toroid.pde"></canvas>
-
-    </div>
-  </div> 
+   <div class="jumbotron">
+     <h1>Tick Tock:
+       <font style="font-size: 14px;"> 
+         The handy dandy app for any procrastinators need.
+       </font>
+     </h1>
+     <br><br><br>
+     <center>
+       <h2>Download the application and get to work! </h2>
+       <br>
+       <form method="get" action="Archive.zip">
+         <button type="submit">Download Time Crunch</button>
+     </form>
+      <h3> You may be wondering why you cant use TimeCrunch online? </h3>
+      <br/>
+      <p> The reason is we want your experience to be as simple as possible. We have not made the necessary databases yet to ensure your tasks' safety. Our team members are making it possible for you to work online as soon as possible.<p>
+    </center>
+   </div>
+ </div> 
   <!--End Organiser-->
   <!-- Begin Tips and Tricks -->
   <div class="container" id="TAT">
@@ -197,30 +206,60 @@
       </div>
     </div>
   </div>
+  <!--End of About Us-->
+  <div class="container" id="reviews">
+    <div class="jumbotron">
+      <div style="list-style-type: none; display: inline-block;">
+        <h1>
+          Reviews and Suggestions: 
+        </h1>
+      </div>
+      <br><br>
+      <p>
+        <b>Hunter Huynh</b> says..."Its a really neat idea...you should give users the ability to manually arange their task. There is a difference between priority and urgency."
+        <br>
+      </p>
+        <p align="right">
+          Thanks to Hunter we added the feature of being able change the order of tasks.
+        </p>
+        <br>
+        </p>
+        <p>
+        <b>Maura McDonaugh</b> says..."This will come really handy when studying for AP's."
+        <br>
+        <p align="right">
+          Thats Right! TimeCrunch can help with anytask from house chores to academic studies!
+        </p>
+        <br>
+        </p>
+
+<p>
+        <b>Viktor Koves</b> says..."It will be really useful if emails could be sent out before due dates. That way those who forget to check the app regularly"
+        <br>
+        <p align="right">
+          Great Idea! We are now working on a emailing system to remind one of upcoming tasks.
+        </p>
+        <br>
+        </p>
+
+<p>
+        <b>Max DeLebreoh (renown procrastinator)</b> says..."I'll check it out tomorrow."
+        <br>
+        <p align="right">
+          Oh Max! You need this more than you may think.
+        </p>
+        <br>
+        </p>
+
+      </p>
+    </div>
+  </div>
   <!-- Bootstrap core JavaScript
   ================================================== -->    
   <!-- Placed at the end of the document so the pages load faster -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <!--This script is for the smooth scrolling feature. -->
- <script>
-  //   $(function() {
-  //     $('a[href*=#]:not([href=#]:not([href=#HELLO]))').click(function() {
-  //       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-  //         var target = $(this.hash);
-  //         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  //         if (target.length) {
-  //           $('html,body').animate({
-  //             scrollTop: target.offset().top
-  //           }, 1000);
-  //           return false;
-  //         }
-  //       }
-  //     });
-  //   });
- </script>
-
-  <script src="js/processing.js"></script>
+  <script src="js/processing-1.4.1.js"></script>
 </body>
 </html>
